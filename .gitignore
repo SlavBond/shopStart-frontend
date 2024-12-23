@@ -40,3 +40,5 @@ lerna-debug.log*
 .env
 ormconfig.json
 .eslintcache
+
+package-lock.json

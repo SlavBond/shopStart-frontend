@@ -1,0 +1,16 @@
+.allKits {
+	display: flex;
+	gap: 5px;
+	margin: 10px;
+    p {
+        color: black
+    }
+    
+    &__button {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 250px;
+        margin: 5px;
+    }
+}

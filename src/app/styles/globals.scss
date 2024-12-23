@@ -1,0 +1,17 @@
+@use './colors' as *;
+@use './fonts.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  // outline: solid 1px black;
+}
+
+body {
+    background-color: var(--neutral-white);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+  }
