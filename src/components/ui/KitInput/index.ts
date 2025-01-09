@@ -1,3 +1,3 @@
-import KitInput from "./Input";
+import KitInput from "./KitInput";
 
 export default KitInput;

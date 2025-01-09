@@ -9,9 +9,9 @@
 
 body {
     background-color: var(--neutral-white);
-    color: white;
+    color: var(--neutral-141718);
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-style: normal;
   }

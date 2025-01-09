@@ -2,6 +2,10 @@
 	display: flex;
 	gap: 5px;
 	margin: 10px;
+    &__block {
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
     p {
         color: black
     }

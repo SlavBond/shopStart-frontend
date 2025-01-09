@@ -11,17 +11,17 @@ interface IButton {
 
 const KitButton = ({ theme = 'dark', disabled = false, radius ='big', children }: IButton) => {
 
-	const buttonClass = classNames(button['kit-button'], {
+  const buttonClass = classNames(button['kit-button'], {
     [button[`kit-button_theme-${theme}`]]: !!theme,
-		[button[`kit-button_radius-${radius}`]]: !!radius,
+    [button[`kit-button_radius-${radius}`]]: !!radius,
     [button['kit-button_disabled']]: disabled,
   });
 
-	return (
-		<div className={buttonClass}>
-			{children}
-		</div>
-	)
+  return (
+    <div className={buttonClass}>
+      {children}
+    </div>
+  )
 }
 
 export default KitButton;

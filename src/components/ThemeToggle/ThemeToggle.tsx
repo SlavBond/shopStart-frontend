@@ -1,7 +1,6 @@
 'use client'
 
-import { log } from "console";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState('light');

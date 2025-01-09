@@ -1,0 +1,31 @@
+.kitHeart {
+  &__input {
+    display: none;
+  }
+
+  &__simulation {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--neutral-white) url("/icons/heart.svg") center no-repeat;
+    box-shadow: 0 8px 16px rgba(var(--neutral-gray-rgb), .12);
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__input:checked {
+    + .kitHeart__simulation {
+        &:after {
+          content: "";
+          width: 19px;
+          height: 16px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background: var(--neutral-white) url("/icons/heart_fill.svg") no-repeat;
+        }
+    }
+  }
+}

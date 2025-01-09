@@ -1,0 +1,39 @@
+.radioButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    opacity: 0;
+    + .radioButton__emulator {
+      border-radius: 50%;
+      border: 1px solid var(--neutral-141718);
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      position: relative;
+      top: 0;
+      cursor: pointer;
+    }
+    &:checked {
+      + .radioButton__emulator {
+        &:after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: var(--neutral-141718);
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-left: 5px;
+  }
+}

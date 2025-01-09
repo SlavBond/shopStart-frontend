@@ -23,6 +23,16 @@
       }
     ]
   },
+  "baseUrl": "./",
+  "paths": {
+    "app/*": [".src/app/*"],
+    "components/*": [".src/components/*"],
+    "public/*": ["./public/*"],
+    "redux/*": [".src/redux/*"],
+    "testMock/*": ["./testMock/*"],
+    "types/*": [".src/types/*"],
+    "shared/*": [".src/shared/*"],
+  },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
